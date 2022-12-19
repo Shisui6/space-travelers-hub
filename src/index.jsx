@@ -9,7 +9,7 @@ import store from './app/store';
 import App from './routes/App';
 import ErrorPage from './routes/error-page';
 import Profile from './features/Profile/Profile';
-import Rockets from './features/Rockets/Rockets';
+import RocketList from './features/RocketList/RocketList';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Rockets />,
+        element: <RocketList />,
       },
       {
         path: 'profile',

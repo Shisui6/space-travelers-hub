@@ -18,6 +18,7 @@ export const fetchRockets = createAsyncThunk(
       newObj.name = obj.rocket_name;
       newObj.type = obj.rocket_type;
       newObj.flickr_images = obj.flickr_images;
+      newObj.desc = obj.description;
 
       return newObj;
     });
