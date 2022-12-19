@@ -2,10 +2,10 @@ import { Outlet } from 'react-router-dom';
 
 const App = () => (
   <div className="App">
-    {/* Add Navbar component here */}
+    <h1>Space Travelers Hub</h1>
+    {/* Replace above element with navbar  */}
 
     <div id="detail">
-      <h1>Space Travelers Hub</h1>
       <Outlet />
     </div>
   </div>
