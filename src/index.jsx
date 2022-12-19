@@ -9,6 +9,7 @@ import store from './app/store';
 import App from './routes/App';
 import ErrorPage from './routes/error-page';
 import Profile from './features/Profile/Profile';
+import Rockets from './features/Rockets/Rockets';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
+      {
+        path: '/',
+        element: <Rockets />,
+      },
       {
         path: 'profile',
         element: <Profile />,
