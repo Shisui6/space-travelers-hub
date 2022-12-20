@@ -1,0 +1,49 @@
+.header {
+  border-bottom: 1px solid #bebfc5;
+  top: 0;
+  margin-bottom: 12px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  height: 56px;
+  margin: 0 8px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 64px;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-link {
+  margin: 0 8px;
+}
+
+.nav-link a {
+  color: #025fac;
+  text-decoration: none;
+}
+
+.nav-link-active {
+  border-bottom: 1px solid #025fac;
+}
+
+.border-left {
+  border-left: 2px solid #bebfc5;
+  padding-left: 16px;
+}
+
+.list {
+  list-style-type: none;
+}
