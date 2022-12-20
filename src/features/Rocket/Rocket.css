@@ -1,0 +1,24 @@
+.Rocket {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.Rocket h2 {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+.Rocket img {
+  width: 250px;
+  height: 180px;
+  margin-right: 20px;
+}
+
+.Rocket button {
+  padding: 11px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 15px;
+}
