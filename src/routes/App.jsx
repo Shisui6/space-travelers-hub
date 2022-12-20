@@ -1,14 +1,25 @@
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { Outlet } from 'react-router-dom';
 import Header from '../features/Header/Header';
+import { fetchRockets } from '../features/RocketList/rocketsSlice';
 
-const App = () => (
-  <div className="App">
-    <Header />
+const App = () => {
+  const dispatch = useDispatch();
 
-    <div id="detail">
-      <Outlet />
+  useEffect(() => {
+    dispatch(fetchRockets());
+  }, [dispatch]);
+
+  return (
+    <div className="App">
+      <Header />
+
+      <div id="detail">
+        <Outlet />
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default App;
