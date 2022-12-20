@@ -14,11 +14,35 @@
   margin-right: 20px;
 }
 
-.Rocket button {
+.reserve {
   padding: 11px;
   background-color: #007bff;
   border: none;
   color: #fff;
   border-radius: 3px;
   font-size: 15px;
+  cursor: pointer;
+}
+
+.cancel {
+  padding: 11px;
+  background: none;
+  border: 1px solid #6d757d;
+  color: #6d757d;
+  border-radius: 3px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.Rocket p {
+  line-height: 23px;
+}
+
+.Rocket span {
+  background-color: #18a2b8;
+  color: #fff;
+  padding: 1px 5px 2px;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-right: 10px;
 }
