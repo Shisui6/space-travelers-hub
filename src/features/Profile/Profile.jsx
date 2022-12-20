@@ -1,5 +1,5 @@
 const Profile = () => (
-  <h1>Profile component</h1>
+  <h1>Profile</h1>
 );
 
 export default Profile;
