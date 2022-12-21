@@ -18,6 +18,12 @@ const App = () => {
       <div id="detail">
         <Outlet />
       </div>
+
+const App = () => (
+  <div className="App">
+    <Header />
+    <div id="detail">
+
     </div>
   );
 };

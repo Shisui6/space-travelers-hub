@@ -1,10 +1,12 @@
 import { useRouteError } from 'react-router-dom';
+import Header from '../features/Header/Header';
 
 export default function ErrorPage() {
   const error = useRouteError();
 
   return (
     <div id="error-page">
+      <Header />
       <h1>404</h1>
       <p>Sorry, an unexpected error has occurred.</p>
       <p>
