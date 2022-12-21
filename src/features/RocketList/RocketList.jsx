@@ -7,7 +7,6 @@ import './RocketList.css';
 const Rockets = () => {
   const dispatch = useDispatch();
   const rockets = useSelector(selectRockets);
-
   useEffect(() => {
     dispatch(fetchRockets());
   }, [dispatch]);

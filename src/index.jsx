@@ -10,6 +10,7 @@ import App from './routes/App';
 import ErrorPage from './routes/error-page';
 import Profile from './features/Profile/Profile';
 import RocketList from './features/RocketList/RocketList';
+import MissionList from './features/Mission/MissionList';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
         element: <RocketList />,
       },
       {
+        path: 'missions',
+        element: <MissionList />,
+      },
+      {
         path: 'profile',
         element: <Profile />,
       },
@@ -35,14 +40,9 @@ const container = document.getElementById('root');
 const root = createRoot(container);
 
 root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <RouterProvider router={router} />
-    </Provider>
-  </React.StrictMode>,
+  <Provider store={store}>
+    <RouterProvider router={router} />
+  </Provider>,
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

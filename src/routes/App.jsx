@@ -4,7 +4,6 @@ import Header from '../features/Header/Header';
 const App = () => (
   <div className="App">
     <Header />
-
     <div id="detail">
       <Outlet />
     </div>
