@@ -52,6 +52,10 @@
 }
 
 /* mission */
+.section {
+  padding: 0 50px 50px;
+}
+
 .width-10 {
   width: 10%;
 }
@@ -67,6 +71,7 @@
 
 .mission-table {
   width: 100%;
+  border: 1px solid #dee2e6;
 }
 
 .mission-row {
@@ -88,11 +93,11 @@ tr:nth-child(even) {
 }
 
 tr:nth-child(odd) {
-  background: #ccc;
+  background: #f2f2f2;
 }
 
 .badge-join {
-  background-color: #177fd4;
+  background-color: #6d757d;
   color: #fff;
   padding: 5px;
   margin-right: 3px;
@@ -101,7 +106,7 @@ tr:nth-child(odd) {
 }
 
 .badge-leave {
-  background-color: rgba(51, 51, 51, 0.7);
+  background-color: #18a2b8;
   color: #fff;
   padding: 5px;
   margin-right: 3px;
@@ -116,6 +121,7 @@ tr:nth-child(odd) {
   border-radius: 5px;
   font-size: 15px;
   padding: 8px;
+  cursor: pointer;
 }
 
 .btn-leave {
@@ -126,4 +132,5 @@ tr:nth-child(odd) {
   border-radius: 5px;
   font-size: 15px;
   padding: 8px;
+  cursor: pointer;
 }

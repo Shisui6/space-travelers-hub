@@ -26,6 +26,8 @@
 
 **Space Travelers Hub** is a react and redux application that helps provide commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
+![image](https://user-images.githubusercontent.com/37116322/208750248-82fce74f-b6f9-4fdb-b522-ef1b68aad88b.png)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -51,7 +53,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Coming Soon...](#)
+- [Live Demo Link](https://shisui-space-travelers-hub.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
