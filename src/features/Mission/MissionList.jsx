@@ -1,15 +1,10 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import Mission from './Mission';
-import { getMissions } from './missionSlice';
 import './mission.css';
 
 const MissionList = () => {
   const missions = useSelector((state) => state.missions);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getMissions());
-  }, [dispatch]);
 
   return (
     <section className="section">
