@@ -10,10 +10,12 @@ const MissionList = () => {
     <section className="section">
       <table className="mission-table">
         <thead>
-          <th className="width-10">Mission</th>
-          <th className="width-60">Description</th>
-          <th className="width-15">Status</th>
-          <th className="width-15">Action</th>
+          <tr>
+            <th className="width-10">Mission</th>
+            <th className="width-60">Description</th>
+            <th className="width-15">Status</th>
+            <th className="width-15">Action</th>
+          </tr>
         </thead>
         <tbody>
           {missions.map((mission) => (

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Mission with snapshot 1`] = `
+<tr>
+  <td
+    className="centerAlign"
+  />
+  <td
+    className="description"
+  >
+    Telstar 19V (Telstar 19 Vantage) is a communication satellite in the Telstar series of the Canadian satellite communications company Telesat. It was built by Space Systems Loral (MAXAR) and is based on the SSL-1300 bus. As of 26 July 2018, Telstar 19V is the heaviest commercial communications satellite ever launched, weighing at 7,076 kg (15,600 lbs) and surpassing the previous record, set by TerreStar-1 (6,910 kg/15230lbs), launched by Ariane 5ECA on 1 July 2009.
+  </td>
+  <td
+    className="centerAlign"
+  >
+    <span>
+      <span
+        className="badge-join"
+      >
+        NOT A MEMBER
+      </span>
+    </span>
+  </td>
+  <td
+    className="centerAlign"
+  >
+    <button
+      className="btn-join"
+      onClick={[Function]}
+      type="submit"
+    >
+      Join Mission
+    </button>
+  </td>
+</tr>
+`;
