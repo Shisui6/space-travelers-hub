@@ -1,10 +1,19 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Mission from './Mission';
 import './mission.css';
+import { getMissions } from './missionSlice';
 
 const MissionList = () => {
-  const missions = useSelector((state) => state.missions);
+  const missions = useSelector((state) => state.missions.missions);
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (!missions.length) {
+      dispatch(getMissions());
+    }
+  }, [dispatch, missions.length]);
 
   return (
     <section className="section">

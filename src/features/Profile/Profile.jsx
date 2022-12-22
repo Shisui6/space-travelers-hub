@@ -12,7 +12,7 @@ const Profile = () => {
     return <span>No rockets reserved</span>;
   };
 
-  const missions = useSelector((state) => state.missions);
+  const missions = useSelector((state) => state.missions.missions);
   const reservedMissions = missions.filter((mission) => mission.reserved !== false);
   const renderMissions = () => {
     if (reservedMissions.length) {

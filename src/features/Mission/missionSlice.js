@@ -25,20 +25,22 @@ export const getMissions = createAsyncThunk(GET_MISSIONS,
 
 const slice = createSlice({
   name: 'missions',
-  initialState: [],
+  initialState: {
+    missions: [],
+  },
   reducers: {
-    joinMission(missions, action) {
-      const id = missions.findIndex(((mission) => (mission.id === action.payload.id)));
-      missions[id].reserved = true;
+    joinMission(state, action) {
+      const id = state.missions.findIndex(((mission) => (mission.id === action.payload.id)));
+      state.missions[id].reserved = true;
     },
-    leaveMission(missions, action) {
-      const id = missions.findIndex(((mission) => (mission.id === action.payload.id)));
-      missions[id].reserved = false;
+    leaveMission(state, action) {
+      const id = state.missions.findIndex(((mission) => (mission.id === action.payload.id)));
+      state.missions[id].reserved = false;
     },
   },
   extraReducers: (builder) => {
     builder.addCase(getMissions.fulfilled, (state, action) => {
-      state.push(...action.payload);
+      state.missions = action.payload;
     });
   },
 });
